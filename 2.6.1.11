@@ -1,0 +1,14 @@
+#input start time
+hour = int(input("Starting time hours (0-23): "))
+minute = int(input("Starting time (minutes) (0-59): "))
+
+# Input the duration in minutes
+duration_minutes = int(input("Enter the duration in minutes: "))
+
+# Calculate end hour and minute
+end_hour = (hour + (minute + duration_minutes) // 60) % 24
+end_minute = (minute + duration_minutes) % 60
+
+
+# Print the result
+print ("The event will end at", end_hour, end_minute)
