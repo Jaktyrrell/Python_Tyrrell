@@ -1,6 +1,6 @@
 #input start time
 hour = int(input("Starting time hours (0-23): "))
-minute = int(input("Starting time (minutes) (0-59): "))
+minute = int(input("Starting time minutes (0-59): "))
 
 # Input the duration in minutes
 duration_minutes = int(input("Enter the duration in minutes: "))
