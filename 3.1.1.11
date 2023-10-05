@@ -1,0 +1,23 @@
+# Input the income
+income = float(input("Enter your income in thalers: "))
+
+# Constants
+tax_relief = 556.02
+base_income = 85528.00
+base_tax = 14839.02
+tax_rate_above_base = 0.32
+
+# Calculate tax
+if income <= base_income:
+    tax = (income * 0.18) - tax_relief
+else:
+    tax = base_tax + ((income - base_income) * tax_rate_above_base)
+
+# Ensure tax is not negative
+tax = max(tax, 0)
+
+# Round the tax
+rounded_tax = round(tax, 0)
+
+# Print the calculated tax
+print("The tax is:",(rounded_tax),"thalers")
