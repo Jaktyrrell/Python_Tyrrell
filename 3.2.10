@@ -1,0 +1,24 @@
+#The continue statement is used to skip the current block and move ahead to the next iteration, without executing the statements inside the loop.
+
+#It can be used with both the while and for loops.
+
+#Your task here is very special: you must design a vowel eater! Write a program that uses:
+
+#a for loop;
+#the concept of conditional execution (if-elif-else)
+#the continue statement.
+
+# Prompt the user to enter a word and assign it to the user_word variable
+user_word = input("Enter a word: ")
+
+# Convert the user's word to uppercase
+user_word = user_word.upper()
+
+# Loop through each letter in the user's word
+for letter in user_word:
+    # Use conditional execution and the continue statement to "eat" the vowels
+    if letter in "AEIOU":
+        continue  # Skip this iteration if the letter is a vowel
+    
+    # Print the uneaten letters (consonants)
+    print(letter)
