@@ -1,0 +1,21 @@
+#Your task is very simple here: write a program that uses a for loop to "count mississippily" to five. 
+#Having counted to five, the program should print to the screen the final message "Ready or not, here I come!"
+
+#EXTRA INFO  
+#Note that the code in the editor contains two elements which may not be fully clear to you at this moment: the import time statement, and the sleep() method. 
+
+#For the time being, we'd just like you to know that we've imported the time module and used the sleep() method to suspend the execution of each subsequent print() function 
+#inside the for loop for one second, so that the message outputted to the console resembles an actual counting. Don't worry - you'll soon learn more about modules and methods.
+
+import time
+
+# For loop that counts to five.
+for i in range(1, 6):
+    # Body of the loop - print the loop iteration number and the word "Mississippi".
+    print(i, "Mississippi")
+    
+    # Body of the loop - use: time.sleep(1) to pause for 1 second
+    time.sleep(1)
+
+#Print function with the final message.
+print("Ready or not, here I come!")
