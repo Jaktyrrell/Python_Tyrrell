@@ -1,0 +1,16 @@
+#Your task is to write a program which reads the number of blocks the builders have, and outputs the height of the pyramid that can be built using these blocks.
+
+#Note: the height is measured by the number of fully completed layers – if the builders don't have a sufficient number of blocks and cannot complete the next layer, 
+#they finish their work immediately.
+
+#Enter number of blocks
+blocks = int(input("Enter the number of blocks: "))
+
+height = 0  # Initialize the height of the pyramid to 0
+blocks_needed = 0  # Initialize the blocks needed for the current layer to 0
+
+while blocks_needed <= blocks:
+    height += 1  # Increment the height for each fully completed layer
+    blocks_needed += height  # Calculate the blocks needed for the next layer
+
+print("The height of the pyramid:", height - 1)
