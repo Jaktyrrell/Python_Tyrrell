@@ -1,0 +1,19 @@
+# Read a number from the user
+c0 = int(input("Enter a natural number: "))
+steps = 0  # start the step counter
+
+# Check if the input is a non-negative and non-zero integer
+if c0 <= 0:
+    print("Please enter a positive, non-zero integer.")
+else:
+    # Execute sequence until c0 becomes 1
+    while c0 != 1:
+        if c0 % 2 == 0:
+            c0 = c0 // 2
+        else:
+            c0 = 3 * c0 + 1
+        steps += 1  # Increment the step counter
+        print(c0)  # Print the value of c0
+
+    # Print the total number of steps
+    print("Number of steps:", steps)
