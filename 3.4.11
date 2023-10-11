@@ -1,0 +1,37 @@
+# step 1
+beatles = []
+
+print("Step 1:", beatles)
+
+# step 2
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+
+print("Step 2:", beatles)
+
+# step 3
+new_member = (input("Add beatle to the group:"))
+
+for new_member in beatles:
+    
+    if new_member == "Stu Sutcliffe":
+        beatles.append(new_member)
+        continue
+
+    elif new_member == "Pete Best":
+        beatles.append(new_member)
+        continue
+
+    elif new_member != ("Stu Sutcliffe", "Pete Best"):
+        print ("This is not a member of the beatles")
+        break
+
+print("Step 3:", beatles)
+
+
+# step 4
+print("Step 4:", beatles)
+
+# step 5
+print("Step 5:", beatles)
