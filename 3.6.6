@@ -1,0 +1,12 @@
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+
+# Create a new list to store unique elements
+new_list = []
+
+# Iterate through the original list and add elements to the new list if they are not already in it
+for number in my_list:
+    if number not in new_list:
+        new_list.append(number)
+
+print("The list with non-repeating numbers:")
+print(new_list)
